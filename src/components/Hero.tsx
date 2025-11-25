@@ -1,6 +1,14 @@
 "use client";
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, Download, Sparkles, Code2, Rocket } from "lucide-react";
+import {
+  Github,
+  Linkedin,
+  Mail,
+  Download,
+  Sparkles,
+  Code2,
+  Rocket,
+} from "lucide-react";
 import { Button } from "./ui/button";
 
 export function Hero() {
@@ -122,7 +130,10 @@ export function Hero() {
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
-                  whileHover={{ scale: 1.05, borderColor: "rgba(139,92,246,0.5)" }}
+                  whileHover={{
+                    scale: 1.05,
+                    borderColor: "rgba(139,92,246,0.5)",
+                  }}
                 >
                   {badge}
                 </motion.span>
@@ -135,7 +146,8 @@ export function Hero() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.8 }}
             >
-              Building immersive digital experiences with clean logic and playful design.
+              Building immersive digital experiences with clean logic and
+              playful design.
             </motion.p>
 
             <motion.div
@@ -151,14 +163,14 @@ export function Hero() {
                 <Rocket className="w-4 h-4 mr-2" />
                 View Projects
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-purple-500/30 bg-purple-500/5 hover:bg-purple-500/10 backdrop-blur-sm"
+              <a
+                href="/Sneha_Jhawar_Resume.pdf"
+                download
+                className="inline-flex items-center px-6 py-3 text-sm font-medium rounded-full border border-purple-500/30 bg-purple-500/5 hover:bg-purple-500/10 backdrop-blur-sm transition-all"
               >
                 <Download className="w-4 h-4 mr-2" />
                 Download Resume
-              </Button>
+              </a>
             </motion.div>
 
             {/* Social Links */}
