@@ -136,7 +136,7 @@ export function Projects() {
 
                     {/* Action Buttons */}
                     <div className="flex gap-3">
-                      <Button
+                      {/* <Button
                         size="sm"
                         className="flex-1 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 border-0"
                       >
@@ -150,7 +150,7 @@ export function Projects() {
                       >
                         <Github className="w-4 h-4 mr-2" />
                         Code
-                      </Button>
+                      </Button> */}
                     </div>
                   </div>
 
@@ -162,7 +162,7 @@ export function Projects() {
           ))}
         </div>
 
-        {/* View All Projects CTA */}
+        {/* View All Projects CTA
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -178,7 +178,7 @@ export function Projects() {
             <ExternalLink className="w-4 h-4 mr-2" />
             View All Projects
           </Button>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
