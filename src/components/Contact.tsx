@@ -17,38 +17,33 @@ export function Contact() {
   const [status, setStatus] = useState<"success" | "error" | null>(null);
 
   // FIXED: Added type for the event 'e'
-  const sendEmail = (e: FormEvent) => {
-    e.preventDefault();
-    setLoading(true);
-    setStatus(null);
+const sendEmail = (e: FormEvent) => {
+  e.preventDefault();
+  setLoading(true);
+  setStatus(null);
 
-    // Your actual IDs
-    const serviceID = "service_lz9uxj7";
-    const templateID = "template_vfs0yen"; // ⚠️ PASTE YOUR TEMPLATE ID HERE
-    const publicKey = "1vHrVi68PLaoApOKj";
+  const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;
+  const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!;
+  const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!;
 
-    // FIXED: Checked if formRef.current exists before sending
-    if (formRef.current) {
-      emailjs
-        .sendForm(serviceID, templateID, formRef.current, {
-          publicKey: publicKey,
-        })
-        .then(
-          () => {
-            setLoading(false);
-            setStatus("success");
-            // FIXED: Optional chaining for safety
-            e.target instanceof HTMLFormElement && e.target.reset();
-            setTimeout(() => setStatus(null), 5000);
-          },
-          (error) => {
-            setLoading(false);
-            setStatus("error");
-            console.error("FAILED...", error.text);
-          }
-        );
-    }
-  };
+  if (formRef.current) {
+    emailjs
+      .sendForm(serviceID, templateID, formRef.current, { publicKey })
+      .then(
+        () => {
+          setLoading(false);
+          setStatus("success");
+          e.target instanceof HTMLFormElement && e.target.reset();
+          setTimeout(() => setStatus(null), 5005);
+        },
+        (error) => {
+          setLoading(false);
+          setStatus("error");
+          console.error("FAILED...", error.text);
+        }
+      );
+  }
+};
 
   const contactInfo = [
     {
