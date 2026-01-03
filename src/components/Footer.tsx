@@ -13,7 +13,7 @@ export function Footer() {
 
   const socialLinks = [
     { icon: Github, href: "https://github.com/Sneha110927", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com/in/sneha1127", label: "LinkedIn" },
+    { icon: Linkedin, href: "https://linkedin.com/in/sneha-jhawar", label: "LinkedIn" },
     { icon: Mail, href: "mailto:jhawarsneha11@gmail.com", label: "Email" },
   ];
 
@@ -120,12 +120,12 @@ export function Footer() {
                 </li>
                 <li>
                   <a
-                    href="https://linkedin.com/in/sneha1127"
+                    href="https://linkedin.com/in/sneha-jhawar"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-purple-300 transition-colors"
                   >
-                    linkedin.com/in/sneha1127
+                    linkedin.com/in/sneha-jhawar
                   </a>
                 </li>
               </ul>

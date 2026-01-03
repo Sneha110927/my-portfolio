@@ -135,7 +135,7 @@ export function Projects() {
                     </div>
 
                     {/* Action Buttons */}
-                    <div className="flex gap-3">
+                    {/* <div className="flex gap-3">
                       <Button
                         size="sm"
                         className="flex-1 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 border-0"
@@ -151,7 +151,7 @@ export function Projects() {
                         <Github className="w-4 h-4 mr-2" />
                         Code
                       </Button>
-                    </div>
+                    </div> */}
                   </div>
 
                   {/* Corner Accent */}
@@ -170,14 +170,14 @@ export function Projects() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-center mt-12"
         >
-          <Button
+          {/* <Button
             size="lg"
             variant="outline"
             className="border-purple-500/30 bg-purple-500/5 hover:bg-purple-500/10 backdrop-blur-sm"
           >
             <ExternalLink className="w-4 h-4 mr-2" />
             View All Projects
-          </Button>
+          </Button> */}
         </motion.div>
       </div>
     </section>

@@ -8,7 +8,7 @@ export function Skills() {
       title: "Languages",
       icon: Code2,
       color: "from-purple-500 to-pink-500",
-      skills: ["C", "Java", "JavaScript", "HTML", "CSS", "SQL"],
+      skills: ["C", "Java", "JavaScript", "HTML", "CSS"],
     },
     {
       title: "Frontend",

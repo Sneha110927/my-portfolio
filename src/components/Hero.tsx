@@ -144,21 +144,21 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1 }}
             >
-              <Button
+              {/* <Button
                 size="lg"
                 className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 border-0 shadow-[0_0_30px_rgba(168,85,247,0.3)] hover:shadow-[0_0_40px_rgba(168,85,247,0.5)] transition-all"
               >
                 <Rocket className="w-4 h-4 mr-2" />
                 View Projects
-              </Button>
-              <Button
+              </Button> */}
+              {/* <Button
                 size="lg"
                 variant="outline"
                 className="border-purple-500/30 bg-purple-500/5 hover:bg-purple-500/10 backdrop-blur-sm"
               >
                 <Download className="w-4 h-4 mr-2" />
                 Download Resume
-              </Button>
+              </Button> */}
             </motion.div>
 
             {/* Social Links */}
@@ -178,7 +178,7 @@ export function Hero() {
                 <Github className="w-5 h-5 text-purple-300" />
               </motion.a>
               <motion.a
-                href="https://linkedin.com/in/sneha1127"
+                href="https://linkedin.com/in/sneha-jhawar"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/20 flex items-center justify-center hover:border-blue-500/50 backdrop-blur-sm transition-all"
