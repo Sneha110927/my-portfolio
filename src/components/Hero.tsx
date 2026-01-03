@@ -169,7 +169,7 @@ export function Hero() {
               transition={{ duration: 0.8, delay: 1.2 }}
             >
               <motion.a
-                href="https://github.com/Sneha110927"
+                href="https://github.com/Sneha-jhawar"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 rounded-full bg-gradient-to-br from-purple-500/10 to-blue-500/10 border border-purple-500/20 flex items-center justify-center hover:border-purple-500/50 backdrop-blur-sm transition-all"
