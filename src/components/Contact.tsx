@@ -278,7 +278,7 @@ const sendEmail = (e: FormEvent) => {
               </div>
             </motion.div>
 
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -289,7 +289,7 @@ const sendEmail = (e: FormEvent) => {
                 <span className="text-purple-300">⚡ Average response time:</span>{" "}
                 <span className="text-white">Within 24 hours</span>
               </p>
-            </motion.div>
+            </motion.div> */}
 
           </motion.div>
         </div>
